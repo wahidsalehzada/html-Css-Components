@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/accordionComponent.css" />
+    <title>Accordion Component</title>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="item">
+        <p class="number">01</p>
+        <p class="text">What is HTML?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            HTML (Hypertext Markup Language) is the standard markup language
+            used to create web pages. It consists of a series of elements and
+            tags, which are used to define the structure and content of a web
+            page. The most common elements include headings, paragraphs, images,
+            links, and lists. HTML is used in conjunction with other languages
+            such as JavaScript and CSS to create dynamic and visually appealing
+            web pages.
+          </p>
+          <ul>
+            <li>
+              HTML is used to create the structure and content of a web page.
+            </li>
+            <li>
+              It defines the headings, paragraphs, images, links, and other
+              elements that make up a web page.
+            </li>
+            <li>
+              It is the backbone of a web page, providing the basic layout and
+              organization.
+            </li>
+            <li>
+              HTML is used in conjunction with other languages such as
+              JavaScript and CSS to create dynamic and visually appealing web
+              pages.
+            </li>
+            <li>
+              HTML is used to create forms, which can be used to collect user
+              input and data.
+            </li>
+            <li>
+              HTML is widely supported by web browsers, making it a widely used
+              and versatile language for creating web pages.
+            </li>
+            <li>
+              HTML tags are used to create the structure of a web page, tags
+              like<code>
+                &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;,
+                &lt;aside&gt; and &lt;footer&gt;</code
+              >
+            </li>
+            <li>
+              HTML5 introduced new tags like <code>&lt;video&gt;</code> and
+              <code>&lt;audio&gt;</code> for adding multimedia contents to web
+              pages.
+            </li>
+            <li>
+              HTML is a markup language which means it is used to add meaning to
+              the content of a web page and make it more accessible to search
+              engines and assistive technologies.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      const btnExpand = document.querySelector(".icon");
+      btnExpand.addEventListener("click", function (e) {
+        const item = document.querySelector(".item").classList.contains("open");
+        if (!item) document.querySelector(".item").classList.add("open");
+        else document.querySelector(".item").classList.remove("open");
+      });
+    </script>
+  </body>
+</html>
