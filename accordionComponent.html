@@ -14,22 +14,38 @@
   <body>
     <div class="accordion">
       <div class="item">
-        <p class="number">01</p>
-        <p class="text">What is HTML?</p>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="icon"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-          />
-        </svg>
+        <div class="accordion-item-header">
+          <p class="number">01</p>
+          <p class="text">What is HTML?</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-open"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-close hidden"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
         <div class="hidden-box">
           <p>
             HTML (Hypertext Markup Language) is the standard markup language
@@ -87,11 +103,24 @@
       </div>
     </div>
     <script>
-      const btnExpand = document.querySelector(".text");
-      btnExpand.addEventListener("click", function (e) {
-        const item = document.querySelector(".item").classList.contains("open");
-        if (!item) document.querySelector(".item").classList.add("open");
-        else document.querySelector(".item").classList.remove("open");
+      const btnExpand = document.querySelector(".accordion-item-header");
+      const item = document.querySelector(".item");
+      const iconOpen = document.querySelector(".icon-open");
+      const iconClose = document.querySelector(".icon-close");
+
+      btnExpand.addEventListener("click", function () {
+        const itemContainingOpenClass = document
+          .querySelector(".item")
+          .classList.contains("open");
+        if (!itemContainingOpenClass) {
+          item.classList.add("open");
+          iconClose.classList.remove("hidden");
+          iconOpen.classList.add("hidden");
+        } else {
+          item.classList.remove("open");
+          iconOpen.classList.remove("hidden");
+          iconClose.classList.add("hidden");
+        }
       });
     </script>
   </body>
