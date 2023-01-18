@@ -37,12 +37,12 @@ body {
   column-gap: 24px;
   row-gap: 32px;
   align-items: center;
-  /* border-top: 5px solid #236be8; */
 }
 .icon {
   width: 24px;
   height: 24px;
   stroke: #236be8;
+  cursor: pointer;
 }
 
 .text,
@@ -50,6 +50,7 @@ body {
   font-size: 24px;
   font-weight: bolder;
   color: #236be8;
+  cursor: pointer;
 }
 .number {
   color: #ced4da;
