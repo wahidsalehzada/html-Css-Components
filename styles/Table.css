@@ -45,7 +45,8 @@ td {
   text-align: left;
 }
 
-thead tr {
+thead tr,
+tfoot tr {
   background-color: #236be8;
   color: #fff;
 }
