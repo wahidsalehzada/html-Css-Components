@@ -12,59 +12,97 @@
     <title>Carousel Component</title>
   </head>
   <body>
-    <div class="carousel">
-      <img
-        class="carousel-img"
-        src="https://images.pexels.com/photos/2681751/pexels-photo-2681751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="The girl's picture as a model for the Carousel Component"
-      />
-      <blockquote class="testimonial">
-        <p class="testimonial-text">
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-          tenetur labore! Deserunt quia officiis quisquam ex rem molestias,
-          earum aliquid ipsam incidunt."
-        </p>
-        <p class="testimonial-author">Nancy Smith</p>
-        <p class="testimonial-job">Product Specialist for GNC</p>
-      </blockquote>
-      <button class="btn btn-left">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="btn-icon"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15.75 19.5L8.25 12l7.5-7.5"
+    <div class="carousel-box">
+      <div class="carousel">
+        <div class="slide">
+          <img
+            class="carousel-img"
+            src="https://images.pexels.com/photos/2681751/pexels-photo-2681751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="The girl's picture as a model for the Carousel Component"
           />
-        </svg>
-      </button>
-      <button class="btn btn-right">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="btn-icon"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          <blockquote class="testimonial">
+            <p class="testimonial-text">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Adipisci, tenetur labore! Deserunt quia officiis quisquam ex rem
+              molestias, earum aliquid ipsam incidunt."
+            </p>
+            <p class="testimonial-author">Nancy Smith</p>
+            <p class="testimonial-job">Product Specialist for GNC</p>
+          </blockquote>
+        </div>
+
+        <div class="slide">
+          <img
+            class="carousel-img"
+            src="https://images.pexels.com/photos/2065200/pexels-photo-2065200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="The girl's picture as a model for the Carousel Component"
           />
-        </svg>
-      </button>
-      <div class="dots">
-        <button class="dot active">&nbsp;</button>
-        <button class="dot">&nbsp;</button>
-        <button class="dot">&nbsp;</button>
-        <button class="dot">&nbsp;</button>
+          <blockquote class="testimonial">
+            <p class="testimonial-text">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Adipisci, tenetur labore! Deserunt quia officiis quisquam ex rem
+              molestias, earum aliquid ipsam incidunt."
+            </p>
+            <p class="testimonial-author">Jennifer Lopez</p>
+            <p class="testimonial-job">Marketing Specialist for GNC</p>
+          </blockquote>
+        </div>
+
+        <div class="slide">
+          <img
+            class="carousel-img"
+            src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="The girl's picture as a model for the Carousel Component"
+          />
+          <blockquote class="testimonial">
+            <p class="testimonial-text">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Adipisci, tenetur labore! Deserunt quia officiis quisquam ex rem
+              molestias, earum aliquid ipsam incidunt."
+            </p>
+            <p class="testimonial-author">John Smith</p>
+            <p class="testimonial-job">IT Specialist for GNC</p>
+          </blockquote>
+        </div>
+
+        <!-- btn left to move to the next slide -->
+        <button class="btn btn-left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="btn-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5"
+            />
+          </svg>
+        </button>
+        <!-- btn right to move to the prev slide -->
+        <button class="btn btn-right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="btn-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </button>
+        <div class="dots"></div>
       </div>
     </div>
+
+    <script src="carouselScript.js"></script>
   </body>
 </html>

@@ -18,26 +18,63 @@ body {
   color: #343a40;
   line-height: 1;
 }
+/* 
+.slider {
+  max-width: 100rem;
+  height: 50rem;
+  margin: 0 auto;
+  position: relative;
+
+  
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
+}
+*/
+.carousel-box {
+  width: 900px;
+  height: 200rem;
+  margin: 100px auto;
+  overflow: hidden;
+}
 .carousel {
+  width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slide {
+  top: 0;
   background-color: #236be8;
-  width: 800px;
   margin: 100px auto;
   padding: 32px;
   padding-left: 86px;
   padding-right: 46px;
   border-radius: 12px;
+  gap: 86px;
+  position: absolute;
+  width: 900px;
   display: flex;
   align-items: center;
-  gap: 86px;
-  position: relative;
+  justify-content: center;
+  transition: transform 1s;
 }
+
 .carousel-img {
   height: 200px;
   border-radius: 8px;
   transform: scale(1.5);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
-}
-.testimonial {
 }
 .testimonial-text {
   font-size: 18px;
@@ -57,6 +94,7 @@ body {
 }
 /* controls */
 .btn {
+  z-index: 10;
   background-color: #fff;
   border: none;
   height: 40px;
@@ -69,15 +107,15 @@ body {
   cursor: pointer;
 }
 .btn-left {
-  left: 0;
+  left: 5%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-105%, 522%);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 .btn-right {
-  right: 0;
+  right: 5%;
   top: 50%;
-  transform: translate(50%, -50%);
+  transform: translate(100%, 522%);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 .btn-icon {
@@ -93,7 +131,7 @@ body {
   gap: 10px;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%, 32px);
+  transform: translate(-50%, 3300%);
 }
 
 .dot {
